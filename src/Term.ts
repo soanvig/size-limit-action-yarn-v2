@@ -44,7 +44,7 @@ class Term {
       });
     }
 
-    const status = await exec("npx size-limit --json", [], {
+    const status = await exec("yarn dlx size-limit --json", [], {
       windowsVerbatimArguments,
       ignoreReturnCode: true,
       listeners: {
